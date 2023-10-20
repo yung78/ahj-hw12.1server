@@ -12,9 +12,9 @@ const app = new Koa();
 const router = new Router();
 const public =  path.join(__dirname, '/public');
 
-app.use(slow({
-  delay: 3000
-}));
+// app.use(slow({
+//   delay: 3000
+// }));
 
 
 app.use(koaStatic(public));
